@@ -1,0 +1,11 @@
+export const MS_PER_SECOND = 1000;
+export const SECONDS_PER_DAY = 86400;
+export const MS_PER_DAY = SECONDS_PER_DAY * MS_PER_SECOND;
+export const SECONDS_PER_HOUR = 3600;
+export const MS_PER_HOUR = SECONDS_PER_HOUR * MS_PER_SECOND;
+export const HOUR_PER_DAY = 24;
+
+const GENESIS_TIMESTAMP = 1676409572 * MS_PER_SECOND;
+export const YESERDAY_TIMESTAMP = Date.now() - MS_PER_DAY;
+export const MIN_QUERY_TIMESTAMP = GENESIS_TIMESTAMP;
+export const MAX_QUERY_TIMESTAMP = Date.now() - 10 * MS_PER_SECOND;
